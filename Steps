@@ -1,6 +1,6 @@
-*Add fileName tag and name it as cicd-github-docker // it will create a jar
+*Add fileName tag in pom and name it as cicd-github-docker // it will create a jar
 
-*Create Dockerfile and name the file as Dockerfile and these commands
+*Create Dockerfile and name the file as Dockerfile and add  these commands
 
 FROM openjdk:17
 EXPOSE 8080
@@ -46,7 +46,7 @@ jobs:
 
 * go to docker hub and check ur repo, ur image will be reflected under tags
 * now use docker pull devimaddi/cicd-github-docker:latest
-*it will download the image and u can check with command docker images
+*it will download the image and u can check the image  with command "docker images"
 * you can see ur repo name under the list
-* to run the image use "docker run -p 9090:8080 devimaddi/cicd-github-docker
+* to run the image use "docker run -p 9090:8080 devimaddi/cicd-github-docker"
 * verify the endpoint with port 9090
